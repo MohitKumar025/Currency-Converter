@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Currency Converter</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>🌍 AI Currency Converter</h1>
+    <div class="converter-box">
+      <div class="input-group">
+        <label for="amount">Enter Amount</label>
+        <div class="input-row">
+          <input type="number" id="amount" value="100"/>
+          <button id="voiceBtn" title="Use Voice"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+      </div>
+
+      <div class="currency-pair">
+        <div class="currency">
+          <label>From</label>
+          <div class="select-wrapper">
+            <img id="from-flag" src="https://flagsapi.com/US/flat/64.png" />
+            <select id="from-currency"></select>
+          </div>
+        </div>
+
+        <div class="swap-btn"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+
+        <div class="currency">
+          <label>To</label>
+          <div class="select-wrapper">
+            <img id="to-flag" src="https://flagsapi.com/IN/flat/64.png" />
+            <select id="to-currency"></select>
+          </div>
+        </div>
+      </div>
+
+      <button id="convertBtn">Convert</button>
+      <div class="result" id="resultText">1 USD = 80 INR</div>
+
+      <div class="forecast">🔮 AI Forecast (Coming soon)</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
